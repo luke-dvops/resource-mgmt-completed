@@ -5,7 +5,9 @@
   "main": "index.js",
   "nyc": {
     "include": [
-    "utils/UserUtil.js"
+    "utils/UserUtil.js",
+    "utils/ResourceUtil.js"
+   
     ],
     "exclude": [],
     "reporter": [
@@ -18,9 +20,9 @@
     "functions": 80,
     "statements": 80
     },
-  "scripts": {
+    "scripts": {
     "test": "nyc mocha tests/*.test.js"
-  },
+    },
   "author": "",
   "license": "ISC",
   "dependencies": {

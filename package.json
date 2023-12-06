@@ -5,13 +5,13 @@
   "main": "index.js",
   "nyc": {
     "include": [
-    "utils/UserUtil.js",
-    "utils/ResourceUtil.js"
-   
+
+      "utils/UserUtil.js",
+      "utils/ResourceUtil.js"
     ],
     "exclude": [],
     "reporter": [
-    "text-summary"
+      "text-summary"
     ],
     "all": true,
     "check-coverage": true,
@@ -19,10 +19,11 @@
     "lines": 80,
     "functions": 80,
     "statements": 80
-    },
-    "scripts": {
+  },
+  "scripts": {
     "test": "nyc mocha tests/*.test.js"
-    },
+  },
+  
   "author": "",
   "license": "ISC",
   "dependencies": {

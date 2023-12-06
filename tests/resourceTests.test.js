@@ -51,9 +51,7 @@ describe('Testing resource related features', () => {
             },
         };
         await addResource(req, res);
-    }); 
-    
-    it('Should return an array when viewing resources', async () => {
+    }); it('Should return an array when viewing resources', async () => {
         const req = {};
         const res = {
             status: function (code) {

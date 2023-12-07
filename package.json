@@ -21,7 +21,8 @@
     "statements": 80
   },
   "scripts": {
-    "test": "nyc mocha tests/*.test.js"
+    "test": "nyc mocha tests/*.test.js",
+    "start": "node index.js"
   },
   "author": "",
   "license": "ISC",

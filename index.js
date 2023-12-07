@@ -17,7 +17,7 @@ const { viewResources, addResource, editResource, deleteResource} = require('./u
 app.get('/view-resources', viewResources);
 app.post('/add-resource', addResource);
 app.put('/edit-resource/:id', editResource);
-app.delete('/delete-resource/:id', deleteResource):
+app.delete('/delete-resource/:id', deleteResource);
 
 
 app.get('/', (req, res) => {

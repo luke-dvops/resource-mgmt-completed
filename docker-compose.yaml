@@ -1,0 +1,8 @@
+version: '3'
+services: 
+  build-rms: 
+    build: 
+      context: .
+      dockerfile: Dockerfile
+    image: lukedvops/rms-docker-img:v2
+    container_name: rms-docker-container

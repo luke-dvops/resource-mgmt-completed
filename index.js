@@ -13,9 +13,11 @@ const { register, login } = require('./utils/UserUtil')
 app.post('/register', register);
 app.post('/login', login);
 
-const { viewResources, addResource} = require('./utils/ResourceUtil')
+const { viewResources, addResource, editResource, deleteResource} = require('./utils/ResourceUtil')
 app.get('/view-resources', viewResources);
 app.post('/add-resource', addResource);
+app.put('/edit-resource/:id', editResource);
+app.delete('/delete-resource/:id', deleteResource);
 
 
 app.get('/', (req, res) => {

@@ -1,7 +1,6 @@
 const { app } = require('../index');
 const { Builder, By, Key, until } = require('selenium-webdriver');
 const { describe, it } = require('mocha');
-const { expect } = require('chai');
 const fs = require('fs').promises;
 
 const chrome = require('selenium-webdriver/chrome');
@@ -79,7 +78,7 @@ describe('Testing Register UI', function () {
         await emailElement.sendKeys('paul@gmail.com');
         // Locate and interact with the password field
         const passwordElement = await driver.findElement(By.id('password'));
-        await emailElement.click(); // Click on the element
+        await passwordElement.click(); // Click on the element
         await passwordElement.sendKeys('123456');
         // Locate and interact with the confirm password field
         const confirmPasswordElement = await driver.findElement(By.id('confirmPassword'));
